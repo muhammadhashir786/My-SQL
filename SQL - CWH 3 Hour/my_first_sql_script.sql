@@ -1,6 +1,6 @@
 -- CREATE DATABASE startersql;
 
--- USE startersql;
+USE startersql;
 
 -- CREATE TABLE users (
 -- id INT AUTO_INCREMENT PRIMARY KEY,
@@ -13,18 +13,25 @@
 
 -- SELECT * FROM users;
 -- SELECT name, email FROM users; 
+SELECT * from programmers;
 
 -- DROP DATABASE startersql;
 
 -- RENAME TABLE users TO programmers; 
 -- SELECT * from programmers;
 
--- ALTER TABLE users ADD column is_active BOOLEAN DEFAULT true;
--- SELECT * from users;
+-- ALTER TABLE programmers ADD column is_active BOOLEAN DEFAULT true;
+-- SELECT * from programmers;
 
--- ALTER TABLE users DROP column is_active;
--- SELECT * from users;
+-- ALTER TABLE programmers DROP column is_active;
+-- SELECT * from programmers;
 
--- ALTER TABLE users MODIFY COLUMN name VARCHAR(150);
--- SELECT * from users;
+-- ALTER TABLE programmers MODIFY COLUMN name VARCHAR(150);
+-- SELECT * from programmers;
+
+-- ALTER TABLE programmers MODIFY COLUMN email VARCHAR(150) AFTER id;
+-- SELECT * from programmers;
+
+-- ALTER TABLE programmers MODIFY COLUMN date_of_birth DATETIME FIRST;
+-- SELECT * from programmers;
 
