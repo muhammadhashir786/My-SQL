@@ -61,9 +61,8 @@ USE startersql;
 -- DELETE FROM users WHERE salary<65000;
 -- SELECT * from users;	
 
-DELETE FROM users WHERE id=3;
-SELECT * from users;	 
-
+-- DELETE FROM users WHERE id=3;
+-- SELECT * from users;	 
 
 -- DELETE FROM users; (we can not do this otherwise the whole data of the table will be deleted)
 -- DROP TABLE users;  (we can not do this otherwise the whole table will be deleted) 	
