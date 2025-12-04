@@ -15,5 +15,7 @@ USE startersql;
 
 -- SELECT id, email from users;
 
-SELECT gender from users;
+SELECT gender, id from users;
+
+-- table m data insert kia huwa hai islye rows bhi arhi hn
 

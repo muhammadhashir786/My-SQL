@@ -11,7 +11,7 @@ USE startersql;
 --     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 -- );
 
--- DROP DATABASE startersql;
+DROP DATABASE startersql;
 
 SELECT * from users;
 
