@@ -12,10 +12,10 @@
 
 -- SELECT * from demo;
 
--- INSERT INTO demo (name, email, gender, profession) VALUES
--- ('Harry', 'user1@gmail.com', 'Male', 'Web developer'),
--- ('Fahad', 'user2@gmail.com', 'Male', 'Full-Stack Developer'),
--- -- ('Ahmad', 'user1@gmail.com', 'Male', 'Frontend Developer');
--- ('Ahmad', 'user3@gmail.com', 'Male', 'Frontend Developer');
+INSERT INTO demo (name, email, gender, profession) VALUES
+('Harry', 'user1@gmail.com', 'Male', 'Web developer'),
+('Fahad', 'user2@gmail.com', 'Male', 'Full-Stack Developer'),
+('Ahmad', 'user4@gmail.com', 'Male', 'Frontend Developer'),
+('Ahmad', 'user3@gmail.com', 'Male', 'Frontend Developer');
 
 SELECT * from demo;

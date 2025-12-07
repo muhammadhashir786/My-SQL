@@ -34,4 +34,6 @@ USE startersql;
 
 -- ALTER TABLE programmers MODIFY COLUMN gender ENUM('Male', 'Female', 'Other') AFTER id;
 
-SELECT * FROM programmers;
+-- SELECT * FROM programmers;
+
+-- SELECT * FROM users;
