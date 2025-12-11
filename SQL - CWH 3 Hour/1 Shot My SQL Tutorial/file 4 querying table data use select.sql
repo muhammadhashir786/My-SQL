@@ -6,14 +6,14 @@ USE main;
 
 -- create table named "user1"
 
--- CREATE TABLE user1 (
---     id INT AUTO_INCREMENT PRIMARY KEY,
---     name VARCHAR(100) NOT NULL,
---     email VARCHAR(100) UNIQUE NOT NULL,
---     gender ENUM('Male', 'Female', 'Other'),
---     date_of_birth DATE,
---     salary DECIMAL(10, 2),
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+--  CREATE TABLE user1 (
+--      id INT AUTO_INCREMENT PRIMARY KEY,
+--      name VARCHAR(100) NOT NULL,
+--      email VARCHAR(100) UNIQUE NOT NULL,
+--      gender ENUM('Male', 'Female', 'Other'),
+--      date_of_birth DATE,
+--      salary DECIMAL(10, 2),
+--      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 -- );
 
 -- insert data into table user1
@@ -68,4 +68,22 @@ USE main;
 -- SELECT * FROM user1 WHERE date_of_birth IS NULL;
 -- SELECT * FROM user1 WHERE date_of_birth IS NOT NULL;
 
--- 	SELECT * FROM user1;
+-- SELECT * FROM user1;
+
+-- SELECT * FROM user1 WHERE gender in('Male', 'Female');
+
+-- SELECT * FROM user1 WHERE gender='Female' AND salary>'70000';
+-- SELECT * FROM user1 WHERE gender='Male' AND salary>'70000';
+-- SELECT * FROM user1 WHERE gender='Male' AND salary<'70000';
+
+
+-- below query returns eifther gender is male or salary is greater than 60k
+
+-- SELECT * FROM user1 WHERE gender='Male' OR salary>'60000';
+-- SELECT * FROM user1 WHERE gender='Male' OR salary>'60000' ORDER BY salary ASC; 
+SELECT * FROM user1 WHERE gender='Male' OR salary>'60000' ORDER BY salary DESC;
+-- SELECT * FROM user1 WHERE gender='Male' OR salary>'60000' ORDER BY date_of_birth DESC;
+-- SELECT * FROM user1 WHERE gender='Male' OR salary>'60000' ORDER BY date_of_birth ASC;
+
+
+
